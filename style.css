@@ -148,6 +148,36 @@ header a {
     font-weight: bold;
 }
 
+/*arrows*/
+.arrows {
+    position: absolute;
+    top:80%;
+    right: 52%;
+    width: 300px;
+    max-width: 30%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.arrows button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--base-color);
+    border: none;
+    font-family: monospace;
+    color: var(--secondary-text);
+    font-weight: bold;
+    font-size: large;
+    transition: .5s;
+}
+
+.arrows button:hover {
+    background-color: var(--secondary-text);
+    color: var(--primary-text);
+}
+
 
 
 
