@@ -214,7 +214,7 @@ header a {
     animation-delay: 1.6s;
 }
 
-.carousel .next .list .item:nth-child(1) img {
+.carousel.next .list .item:nth-child(1) img {
     width: 150px;
     height: 220px;
     position: absolute;
@@ -233,6 +233,30 @@ header a {
         border-radius: 0;
     }
 }
+
+.carousel.next .thumbnail .item:nth-last-child(1){
+    width: 0;
+    overflow: hidden;
+    animation: showThumbnail .5s linear forwards;
+}
+
+@keyframes showThumbnail{
+    to{
+        width: 150px; 
+    }
+}
+
+.carousel.next .thumbnail {
+    transform: translateX(150px);
+    animation: transformThumbnail .5s linear 1 forwards;
+}
+
+@keyframes transformThumbnail {
+    to{
+        transform: translateX(0);
+    }
+}
+
 
 
 
