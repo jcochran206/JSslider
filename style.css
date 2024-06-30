@@ -44,8 +44,8 @@ header a {
 
 /* carousel */ 
 .carousel {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
     margin-top: -50px;
 }
@@ -284,7 +284,7 @@ header a {
 .carousel.prev .list .item:nth-child(2) .topic,
 .carousel.prev .list .item:nth-child(2) .des,
 .carousel.prev .list .item:nth-child(2) .buttons{
-    animation: contentOUt 1.5s linear 1 forwards;
+    animation: contentOut 1.5s linear 1 forwards;
 }
 
 @keyframes contentOut {
@@ -323,6 +323,14 @@ header a {
     }
 }
 
+@media screen and (max-width: 678px){
+    .carousel .list .item .content {
+        padding-right: 0;
 
+    }
+    .carousel .list .item .content .title {
+        font-size: 30px;
+    }
+}
 
 
